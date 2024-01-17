@@ -1,0 +1,656 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#nav {
+  background-color: #ff7171;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+#nav > a {
+  text-decoration: none;
+  color: rgb(40, 39, 39);
+  font-size: 16px;
+}
+
+.menu {
+  width: 35px;
+}
+#main {
+  display: flex;
+  background-image: linear-gradient(to bottom, #f1d892, #f5a7c1);
+}
+.a,
+.b {
+  width: 70%;
+}
+
+.a {
+  background-image: linear-gradient(to right, #f0d690, #efb5ea);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  background-color: rgb(228, 111, 111);
+  color: white;
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  border: none;
+  transition: transform 0.1s ease-in-out;
+  /* margin-left: 30px; */
+}
+.sub p {
+  text-align: justify;
+  font-size: 5px;
+}
+
+#head {
+  font-size: 50px;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+#part2 {
+  background-image: linear-gradient(to right bottom, #f0d690, #ee90e6);
+
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.x {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.y {
+  width: 295px;
+}
+.z {
+  background-color: rgb(228, 111, 111);
+}
+.arrow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+}
+.z > p {
+  margin-left: 15px;
+}
+.z > h1 {
+  margin-left: 15px;
+  font-size: 40px;
+}
+.z > div {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.b {
+  background-image: url("./myImages/pexels-robin-stickel-70497.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.y img {
+  width: 100%;
+  object-fit: cover;
+  height: 410px;
+}
+.x1 {
+  height: 200px;
+  background-image: url("./myImages/pexels-rachel-claire-6752433.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.x2 {
+  height: 200px;
+  background-image: url("./myImages/pexels-eva-bronzini-6141651.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subCont {
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  #nav {
+    width: auto;
+  }
+  #main {
+    width: auto;
+    height: 600px;
+  }
+  .sub {
+    width: auto;
+
+    height: auto;
+  }
+
+  #part2 {
+    width: auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .x {
+    margin-left: 20px;
+  }
+  .z {
+    width: 380px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .sub p {
+    font-size: 15px;
+  }
+
+  .x1,
+  .x2 {
+    width: 300px;
+  }
+  .y {
+    margin-left: 10px;
+  }
+  .subCont {
+    margin-left: 50px;
+  }
+  #head {
+    margin-left: 50px;
+  }
+  .btn {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 280px) and (max-width: 768px) {
+  #nav {
+    width: auto;
+  }
+  #main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+  .sub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subCont {
+    width: 70%;
+  }
+  #head {
+    font-size: 30px;
+  }
+  .sub p {
+    font-size: 10px;
+
+    text-align: center;
+    text-align: justify;
+  }
+  #nav > a {
+    font-size: 5px;
+    display: none;
+  }
+  .a {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  .btn {
+    font-size: 10px;
+    margin-bottom: 30px;
+    /* margin-left: 50px;
+      margin-right: 50px; */
+  }
+  .a,
+  .b {
+    width: auto;
+  }
+
+  .b {
+    height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+  }
+
+  .sub > p {
+    margin-top: 0px;
+  }
+
+  #part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: auto;
+  }
+  .x {
+    flex-direction: column;
+    width: 100%;
+  }
+  .z {
+    width: 60%;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 200px;
+  }
+  .z > h1 {
+    padding-right: 10px;
+    font-size: x-large;
+  }
+  .x1,
+  .x2 {
+    height: 250px;
+    object-fit: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    width: 60%;
+    margin: auto;
+  }
+  .z p {
+    margin-top: 40px;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu {
+    margin-right: 20px;
+  }
+  .y {
+    width: 60%;
+  }
+  .y img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  #nav input[type="checkbox"]:checked + ul {
+    display: block;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    animation: slideIn 0.5s ease-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media only screen and (width: 768px) {
+  .z {
+    margin-left: 30px;
+  }
+  #main {
+    width: auto;
+  }
+  #main {
+    display: flex;
+    flex-direction: row;
+  }
+  .b {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-left: -50px;
+    margin-right: 0px;
+  }
+  .a {
+    width: 60%;
+  }
+  #part2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  .y,
+  .z {
+    width: auto;
+    margin-left: 10px;
+  }
+  .x {
+    height: 410px;
+    width: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+  }
+  .y {
+    width: 400px;
+  }
+
+  .sub {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .x1,
+  .x2 {
+    width: 100%;
+  }
+  .subCont {
+    margin-left: 0px;
+  }
+  #head {
+    margin-left: 0px;
+  }
+  .btn {
+    margin-left: 0px;
+  }
+  .y img {
+    width: 100%;
+    height: 410px;
+  }
+}
+@media (max-width: 279px) {
+  #nav {
+    width: auto;
+    box-sizing: border-box;
+  }
+  #main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+  }
+  .sub {
+    width: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #head {
+    font-size: 10px;
+    margin-top: 20px;
+    /* margin-right: 25px; */
+  }
+  .sub p {
+    font-size: auto;
+
+    margin-top: 10px;
+    text-overflow: clip;
+  }
+  .subCont {
+    margin-left: 10px;
+    width: 50%;
+    margin-right: 10px;
+  }
+  #nav > a {
+    font-size: 5px;
+    display: none;
+  }
+  .a {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .btn {
+    font-size: 5px;
+    margin-bottom: 30px;
+
+    width: auto;
+    height: auto;
+  }
+
+  .b {
+    height: 150px;
+
+    margin-bottom: 15px;
+    width: 100%;
+    background-image: url("./myImages/pexels-robin-stickel-70497.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+
+  #part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: auto;
+  }
+  .x {
+    flex-direction: column;
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+  .z {
+    width: 60%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+  }
+  .z > h1 {
+    padding-right: 8px;
+    font-size: 5px;
+  }
+  .x1,
+  .x2 {
+    width: 60%;
+    height: 100px;
+    margin: auto;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu {
+    margin-right: 10px;
+  }
+  .y {
+    width: 60%;
+
+    box-sizing: border-box;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  .arrow {
+    width: auto;
+    font-size: 5px;
+  }
+  .arrow img {
+    width: 5px;
+  }
+
+  .z p {
+    font-size: 5px;
+    margin-top: 20px;
+  }
+
+  #nav input[type="checkbox"]:checked + ul {
+    display: block;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+    animation: slideIn 0.3s ease-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  #nav label img {
+    width: 15px;
+  }
+
+  #nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+  }
+  #nav ul {
+    margin-top: 50px;
+    width: 100%;
+
+    box-sizing: border-box;
+    background-image: linear-gradient(to right bottom, #f0d690, #ee90e6);
+
+    position: absolute;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  #nav ul p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: -60px;
+    margin-top: -20px;
+    padding-top: 15px;
+  }
+  body {
+    box-sizing: border-box;
+    padding: 0px;
+
+    margin-right: 0px;
+  }
+
+  .subCont {
+    width: auto;
+  }
+}
+
+#nav input[type="checkbox"] {
+  display: none;
+}
+
+#nav ul {
+  margin-top: 10px;
+  width: 100%;
+
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, #f0d690, #ee90e6);
+  display: none;
+  position: absolute;
+
+  top: 25px;
+}
+
+#nav input[type="checkbox"]:checked + label img {
+  opacity: 0.5;
+}
+
+#nav label img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  transition: transform 0.1s ease-in-out;
+}
+#nav label img:hover {
+  transform: scale(1.1);
+}
+#nav ul p {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: -50px;
+}
+
+#nav ul a {
+  text-decoration: none;
+  color: black;
+}
+#nav ul a:hover {
+  color: green;
+}
+
+#nav a {
+  transition: transform 0.1s ease-in-out;
+}
+#nav a:hover {
+  color: rgb(53, 100, 53);
+  transform: scale(1.1);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  #nav a {
+    font-size: 12px;
+  }
+  #nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
